@@ -1,0 +1,79 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/_original/sensedia-current-openapi.yml
+format: custom
+envelope:
+  media_type: application/json; charset=utf-8
+  schema: ResponseError
+coverage:
+  operations: 5
+  statuses_declared: 9
+problems:
+- status: 400
+  title: Bad Request
+  description: A requisição foi malformada, omitindo atributos obrigatórios, seja no payload ou através de atributos
+    na URL.
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 401
+  title: Unauthorized
+  description: Cabeçalho de autenticação ausente/inválido ou token inválido
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 403
+  title: Forbidden
+  description: O token tem escopo incorreto ou uma política de segurança foi violada
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 404
+  title: Not Found
+  description: O recurso solicitado não existe ou não foi implementado
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 405
+  title: Method Not Allowed
+  description: O consumidor tentou acessar o recurso com um método não suportado
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 406
+  title: Not Acceptable
+  description: A solicitação continha um cabeçalho Accept diferente dos tipos de mídia permitidos ou um conjunto
+    de caracteres diferente de UTF-8
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 429
+  title: Too Many Requests
+  description: A operação foi recusada, pois muitas solicitações foram feitas dentro de um determinado período ou
+    o limite global de requisições concorrent
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 500
+  title: Internal Server Error
+  description: Ocorreu um erro no gateway da API ou no microsserviço
+  operations: 5
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: default
+  title: null
+  description: Dados de identificação das contas obtidos com sucesso.
+  operations: 5
+  media_types:
+  - application/json
+  schema: ResponseAccountList

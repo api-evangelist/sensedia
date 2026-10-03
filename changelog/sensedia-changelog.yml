@@ -1,0 +1,81 @@
+generated: '2026-10-03'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.sensedia.com/en-US/docs/access-control/release-notes
+sources:
+- https://docs.sensedia.com/en-US/docs/access-control/release-notes
+- https://docs.sensedia.com/en-US/docs/adaptive-governance/release-notes
+- https://docs.sensedia.com/en-US/docs/events-hub/release-notes
+- https://docs.sensedia.com/en-US/docs/flexible-actions/release-notes
+entries:
+- breaking: false
+  highlights:
+  - Deactivation due to failed login attempts
+  - To strengthen access security, the account is now automatically deactivated after several failed login attempts.
+  - The rule applies to both local and federated users.
+  date: '2026-06-02'
+- breaking: false
+  highlights:
+  - New Client Apps feature
+  - Access Control now supports independent Machine-to-Machine (Client Apps) credentials for system integrations.
+  - Credentials now have their own permissions and status, eliminating the need to link automations to named platform users.
+  date: '2026-05-19'
+- breaking: false
+  highlights:
+  - Federated login improvements
+  - When a federated login configuration is deleted, users who were active at that time will become local Access Control users and will need to
+    reset their password.
+  date: '2026-04-29'
+- breaking: false
+  highlights:
+  - Improvements
+  - It is now possible to immediately disable a newly created user, even when in the PENDING state (awaiting activation).
+  - Federated users cannot reset their password through the Access Control interface.
+  date: '2026-03-19'
+- breaking: false
+  highlights:
+  - Security improvement
+  - 'Limitation for federated login: each environment now supports only one active Identity Provider (IdP) at a time.'
+  date: '2026-03-04'
+- breaking: false
+  highlights:
+  - UI Modernization and Design System completed
+  - Adaptive Governance's interface modernization, with the Workflows, Impact Analysis, and Attributes screens now fully aligned with the Sensedia
+    Platform Design System.
+  date: '2026-04-10'
+- breaking: false
+  highlights:
+  - Standardization of Apigee environments
+  - Aligned the behavior of Apigee API imports with the standard used by other native gateways, eliminating naming discrepancies.
+  date: '2026-03-12'
+- breaking: false
+  highlights:
+  - Evolution of Smart Recommendations
+  - Smart Recommendations now consider the global context of the specification and display impact details such as total corrected violations.
+  date: '2026-03-06'
+- breaking: false
+  highlights:
+  - Automated migration
+  - Implemented an automatic update process for customers migrating from Sensedia API Platform version 4.x to Sensedia API Management 5.x.
+  date: '2026-02-23'
+- breaking: false
+  highlights:
+  - UI Modernization and Design System
+  - Adaptive Governance now follows the new Sensedia Platform visual identity, providing greater visual consistency and improved usability.
+  date: '2026-02-13'
+- breaking: false
+  highlights:
+  - Deployment Governance based on API contracts
+  - Implemented agnostic logic for importing environments directly from OpenAPI contracts (v2 and v3).
+  date: '2026-02-05'
+- breaking: false
+  highlights:
+  - Events Hub Authorization API
+  - Only authorized publishers can send events to the Events Hub.
+  - 'Important: Sensedia API Management v5 clients must import the Events Hub Authorization API to obtain the authorization URL.'
+  date: '2024-04-24'
+current_version: 1.13.0.0
+note: 'Versioning scheme varies by product: Access Control uses dates (YYYY-MM-DD), Adaptive Governance uses semantic versions (e.g., 2026-04-10
+  entry is an improvement without a version number), Events Hub uses semantic versions (e.g., 1.13.0.0). The latest listed version across the
+  pages is Events Hub version 1.13.0.0.'
+docs: https://docs.sensedia.com/en-US/docs/access-control/release-notes

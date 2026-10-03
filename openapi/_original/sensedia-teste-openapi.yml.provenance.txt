@@ -1,0 +1,9 @@
+generated: '2026-10-03'
+method: probed
+generator: harvest-sibling-contracts.py
+source: https://raw.githubusercontent.com/Sensedia/gerador-changelog-api/main/changelog-api/yaml-OpenAPI/teste.yaml
+found_on: https://github.com/Sensedia/gerador-changelog-api
+operations: gh:teste.yaml
+version: 3.0.0
+ownership: sibling of a contract the pass accepted on the same host; URL names the
+  provider

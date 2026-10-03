@@ -1,23 +1,193 @@
 aid: sensedia
+
 name: Sensedia
-description: 'Sensedia is a company surfaced via the API Evangelist harvest backlog (source: gartner-mq)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Sensedia provides API management and integration solutions, helping enterprises design, secure, and scale APIs. Their platform supports
+  multi‑gateway environments, AI adoption roadmaps, and digital experience enablement. Sensedia serves industries such as healthcare, finance,
+  insurance, and e‑commerce, offering products like API Governance, AI Gateway, Open Banking, and Events Hub. With over 15 years of expertise,
+  they focus on secure, autonomous agent operations and modernizing legacy systems.
+
 url: https://raw.githubusercontent.com/api-evangelist/sensedia/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gartner-mq
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- API Management
+- Integration
+- Enterprise
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: ErrorCatalog
+  url: errors/sensedia-problem-types.yml
+- type: Spectral
+  url: rules/sensedia-rules.yml
+- type: JSONLD
+  url: json-ld/sensedia-context.jsonld
+- type: Vocabulary
+  url: vocabulary/sensedia-vocabulary.yml
+- type: DataModel
+  url: data-model/sensedia-data-model.yml
+- type: ChangeLog
+  url: changelog/sensedia-changelog.yml
+- type: Conformance
+  url: conformance/sensedia-conformance.yml
+- type: LLMsTxt
+  url: llms/sensedia-llms.txt
+- type: Hosts
+  url: hosts/sensedia-hosts.yml
+- type: Vendors
+  url: vendors/sensedia-vendors.yml
+- type: SDKs
+  url: packages/sensedia-packages.yml
+- type: Packages
+  url: packages/sensedia-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/Sensedia
+- type: DomainSecurity
+  url: security/sensedia-domain-security.yml
 - type: Website
   url: https://www.sensedia.com
+- type: DeveloperPortal
+  url: https://partnerportal.sensedia.com/
+- type: Blog
+  url: https://www.sensedia.com/blog
+- type: Documentation
+  url: https://www.sensedia.com/resources
+- type: Support
+  url: https://www.sensedia.com/service/support
+- type: PrivacyPolicy
+  url: https://www.sensedia.com/privacy-policy
+
+apis:
+- name: Sensedia API Platform
+  description: Sensedia API platform providing integration solutions.
+  humanURL: https://developers.sensedia.com/pt/products
+  baseURL: null
+  x-coverage:
+    state: unreadable
+    reason: js-rendered-docs
+    detail: Documentation pages are rendered via JavaScript and no machine‑readable spec was found.
+    evidence:
+    - url: https://api.sensedia.com/openapi.json
+      status: 0
+    checked: '2026-10-03'
+  aid: sensedia:sensedia-api-platform
+- aid: sensedia:sensedia-api
+  name: Sensedia API
+  description: 'Sensedia API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-03); not
+
+    the provider''s own document.'
+  humanURL: https://docs.sensedia.com/docs/developer-portal/overview/apps/webhook
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/sensedia-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/sensedia-post-v1-v1-id-response-schema.json
+- aid: sensedia:sensedia-old-api
+  name: Sensedia Old API
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/sensedia-old-openapi.yml
+- aid: sensedia:sensedia-current-api
+  name: Sensedia Current API
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/sensedia-current-openapi.yml
+- aid: sensedia:sensedia-teste-api
+  name: Sensedia Teste API
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  properties:
+  - type: OpenAPI
+    url: openapi/_original/sensedia-teste-openapi.yml
+
+- aid: sensedia:sensedia-old-api
+
+  name: Sensedia Old API
+
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+
+  properties:
+
+  - type: OpenAPI
+
+    url: openapi/_original/sensedia-old-openapi.yml
+
+- aid: sensedia:sensedia-current-api
+
+  name: Sensedia Current API
+
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+
+  properties:
+
+  - type: OpenAPI
+
+    url: openapi/_original/sensedia-current-openapi.yml
+
+- aid: sensedia:sensedia-teste-api
+
+  name: Sensedia Teste API
+
+  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
+
+  humanURL: https://github.com/Sensedia/gerador-changelog-api
+
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+
+  properties:
+
+  - type: OpenAPI
+
+    url: openapi/_original/sensedia-teste-openapi.yml
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-03'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://content.sensedia.com/mcp
+    status: 403
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 22
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

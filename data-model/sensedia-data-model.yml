@@ -1,0 +1,108 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/_original/sensedia-current-openapi.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 13
+  entities_in_spec: 13
+  relationships: 16
+entities:
+- name: AccountBalancesData
+  fields: 6
+  description: 'Conjunto de informações das Contas de: depósito à vista, poupança e de pagamento pré-paga'
+- name: AccountData
+  fields: 8
+- name: AccountIdentificationData
+  fields: 7
+  description: 'Conjunto dos atributos que caracterizam as Contas de: depósito à vista, poupança e de pagamento
+    pré-paga'
+- name: AccountOverdraftLimitsData
+  fields: 6
+  description: 'Conjunto de informações da Conta de: depósito à vista'
+- name: AccountTransactionsData
+  fields: 14
+- name: Links
+  fields: 5
+  description: Referências para outros recusos da API requisitada.
+- name: Meta
+  fields: 3
+  description: Meta informações referente à API requisitada.
+- name: ResponseAccountBalances
+  fields: 3
+- name: ResponseAccountIdentification
+  fields: 3
+- name: ResponseAccountList
+  fields: 3
+- name: ResponseAccountOverdraftLimits
+  fields: 3
+- name: ResponseAccountTransactions
+  fields: 3
+- name: ResponseError
+  fields: 2
+relationships:
+- from: ResponseAccountList
+  to: AccountData
+  type: has_many
+  via: data
+- from: ResponseAccountList
+  to: Links
+  type: has_one
+  via: links
+- from: ResponseAccountList
+  to: Meta
+  type: has_one
+  via: meta
+- from: ResponseAccountBalances
+  to: AccountBalancesData
+  type: has_one
+  via: data
+- from: ResponseAccountBalances
+  to: Links
+  type: has_one
+  via: links
+- from: ResponseAccountBalances
+  to: Meta
+  type: has_one
+  via: meta
+- from: ResponseAccountIdentification
+  to: AccountIdentificationData
+  type: has_one
+  via: data
+- from: ResponseAccountIdentification
+  to: Links
+  type: has_one
+  via: links
+- from: ResponseAccountIdentification
+  to: Meta
+  type: has_one
+  via: meta
+- from: ResponseAccountOverdraftLimits
+  to: AccountOverdraftLimitsData
+  type: has_one
+  via: data
+- from: ResponseAccountOverdraftLimits
+  to: Links
+  type: has_one
+  via: links
+- from: ResponseAccountOverdraftLimits
+  to: Meta
+  type: has_one
+  via: meta
+- from: ResponseAccountTransactions
+  to: AccountTransactionsData
+  type: has_many
+  via: data
+- from: ResponseAccountTransactions
+  to: Links
+  type: has_one
+  via: links
+- from: ResponseAccountTransactions
+  to: Meta
+  type: has_one
+  via: meta
+- from: ResponseError
+  to: Meta
+  type: has_one
+  via: meta

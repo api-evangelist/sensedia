@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/sensedia/main/json-schema/sensedia-post-v1-v1-id-response-schema.json",
+  "title": "PostV1V1IdResponse",
+  "x-generated": "2026-10-03",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/sensedia-openapi-generated.yml#/components/schemas/PostV1V1IdResponse",
+  "type": "object",
+  "properties": {
+    "apiKeyId": {
+      "type": "string",
+      "description": "Returned when credentialType=API_KEY"
+    },
+    "apiKey": {
+      "type": "string",
+      "description": "Returned when credentialType=API_KEY"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Returned when credentialType=CLIENT_CREDENTIALS"
+    },
+    "clientSecret": {
+      "type": "string",
+      "description": "Returned when credentialType=CLIENT_CREDENTIALS"
+    },
+    "customCredentials": {
+      "type": "object",
+      "description": "Optional additional information"
+    }
+  }
+}

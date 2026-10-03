@@ -1,0 +1,484 @@
+generated: '2026-10-03'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/Sensedia
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (security/sensedia-domain-security.yml,
+  sensedia.com) or its accepted GitHub org (Sensedia).'
+packages:
+- name: apim-ops-toolkit
+  registry: github
+  url: https://github.com/Sensedia/apim-ops-toolkit
+  language: Python
+  official: true
+  version: null
+  published: '2026-08-20'
+  source_repo: https://github.com/Sensedia/apim-ops-toolkit
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-platform-hybrid
+  registry: github
+  url: https://github.com/Sensedia/api-platform-hybrid
+  language: ''
+  official: true
+  version: null
+  published: '2026-08-18'
+  source_repo: https://github.com/Sensedia/api-platform-hybrid
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: gerador-changelog-api
+  registry: github
+  url: https://github.com/Sensedia/gerador-changelog-api
+  language: TypeScript
+  official: true
+  version: null
+  published: '2024-10-10'
+  source_repo: https://github.com/Sensedia/gerador-changelog-api
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-app-kit
+  registry: github
+  url: https://github.com/Sensedia/apix2019-app-kit
+  language: JavaScript
+  official: true
+  version: null
+  published: '2023-11-12'
+  source_repo: https://github.com/Sensedia/apix2019-app-kit
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: compare-apis
+  registry: github
+  url: https://github.com/Sensedia/compare-apis
+  language: ''
+  official: true
+  version: null
+  published: '2023-08-03'
+  source_repo: https://github.com/Sensedia/compare-apis
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-notification-nodejs
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-notification-nodejs
+  language: JavaScript
+  official: true
+  version: null
+  published: '2022-12-09'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-notification-nodejs
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-finder-java
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-finder-java
+  language: Java
+  official: true
+  version: null
+  published: '2022-11-15'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-finder-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: fornello-client
+  registry: github
+  url: https://github.com/Sensedia/fornello-client
+  language: Vue
+  official: true
+  version: null
+  published: '2022-10-11'
+  source_repo: https://github.com/Sensedia/fornello-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-crawler-nodejs
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-crawler-nodejs
+  language: JavaScript
+  official: true
+  version: null
+  published: '2022-09-29'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-crawler-nodejs
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-kit-kotlin
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-kit-kotlin
+  language: Kotlin
+  official: true
+  version: null
+  published: '2022-06-21'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-kit-kotlin
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-notification-kotlin
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-notification-kotlin
+  language: Kotlin
+  official: true
+  version: null
+  published: '2022-05-20'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-notification-kotlin
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: custom-java-example
+  registry: github
+  url: https://github.com/Sensedia/custom-java-example
+  language: Java
+  official: true
+  version: null
+  published: '2019-07-29'
+  source_repo: https://github.com/Sensedia/custom-java-example
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-infra
+  registry: github
+  url: https://github.com/Sensedia/apix2019-infra
+  language: HCL
+  official: true
+  version: null
+  published: '2019-06-05'
+  source_repo: https://github.com/Sensedia/apix2019-infra
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-kit-java
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-kit-java
+  language: Java
+  official: true
+  version: null
+  published: '2019-06-05'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-kit-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-payment-java
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-payment-java
+  language: Java
+  official: true
+  version: null
+  published: '2019-06-05'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-payment-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-register-java
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-register-java
+  language: Java
+  official: true
+  version: null
+  published: '2019-06-04'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-register-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2019-microservice-crawler-python
+  registry: github
+  url: https://github.com/Sensedia/apix2019-microservice-crawler-python
+  language: Python
+  official: true
+  version: null
+  published: '2019-06-03'
+  source_repo: https://github.com/Sensedia/apix2019-microservice-crawler-python
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: aceleradores-graphql-nodejs
+  registry: github
+  url: https://github.com/Sensedia/aceleradores-graphql-nodejs
+  language: JavaScript
+  official: true
+  version: null
+  published: '2019-01-28'
+  source_repo: https://github.com/Sensedia/aceleradores-graphql-nodejs
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-futcard-android-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-futcard-android-client
+  language: Java
+  official: true
+  version: null
+  published: '2018-12-21'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-futcard-android-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: aceleradores-graphql-java
+  registry: github
+  url: https://github.com/Sensedia/aceleradores-graphql-java
+  language: Java
+  official: true
+  version: null
+  published: '2018-10-25'
+  source_repo: https://github.com/Sensedia/aceleradores-graphql-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-microservico-solicitacoes-pagamento
+  registry: github
+  url: https://github.com/Sensedia/apix2018-microservico-solicitacoes-pagamento
+  language: Java
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-microservico-solicitacoes-pagamento
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-microservico-notificacoes
+  registry: github
+  url: https://github.com/Sensedia/apix2018-microservico-notificacoes
+  language: Java
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-microservico-notificacoes
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-microservico-boletos
+  registry: github
+  url: https://github.com/Sensedia/apix2018-microservico-boletos
+  language: Java
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-microservico-boletos
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-microservico-antifraude
+  registry: github
+  url: https://github.com/Sensedia/apix2018-microservico-antifraude
+  language: Java
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-microservico-antifraude
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-app
+  registry: github
+  url: https://github.com/Sensedia/apix2018-app
+  language: HTML
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-app
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2018-api-front-pagamento
+  registry: github
+  url: https://github.com/Sensedia/apix2018-api-front-pagamento
+  language: Java
+  official: true
+  version: null
+  published: '2018-08-09'
+  source_repo: https://github.com/Sensedia/apix2018-api-front-pagamento
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-front-template
+  registry: github
+  url: https://github.com/Sensedia/api-front-template
+  language: Shell
+  official: true
+  version: null
+  published: '2018-04-13'
+  source_repo: https://github.com/Sensedia/api-front-template
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-platform-jenkins-plugin
+  registry: github
+  url: https://github.com/Sensedia/api-platform-jenkins-plugin
+  language: Java
+  official: true
+  version: null
+  published: '2018-04-05'
+  source_repo: https://github.com/Sensedia/api-platform-jenkins-plugin
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: interceptor-java-example
+  registry: github
+  url: https://github.com/Sensedia/interceptor-java-example
+  language: Java
+  official: true
+  version: null
+  published: '2018-02-14'
+  source_repo: https://github.com/Sensedia/interceptor-java-example
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-starter-test
+  registry: github
+  url: https://github.com/Sensedia/api-starter-test
+  language: Java
+  official: true
+  version: null
+  published: '2017-10-16'
+  source_repo: https://github.com/Sensedia/api-starter-test
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-starter
+  registry: github
+  url: https://github.com/Sensedia/api-starter
+  language: Java
+  official: true
+  version: null
+  published: '2017-10-16'
+  source_repo: https://github.com/Sensedia/api-starter
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-manager-java-client-sdk
+  registry: github
+  url: https://github.com/Sensedia/api-manager-java-client-sdk
+  language: HTML
+  official: true
+  version: null
+  published: '2017-09-26'
+  source_repo: https://github.com/Sensedia/api-manager-java-client-sdk
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-manager-php-client-sdk
+  registry: github
+  url: https://github.com/Sensedia/api-manager-php-client-sdk
+  language: PHP
+  official: true
+  version: null
+  published: '2017-09-08'
+  source_repo: https://github.com/Sensedia/api-manager-php-client-sdk
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-manager-csharp-client-sdk
+  registry: github
+  url: https://github.com/Sensedia/api-manager-csharp-client-sdk
+  language: C#
+  official: true
+  version: null
+  published: '2017-09-08'
+  source_repo: https://github.com/Sensedia/api-manager-csharp-client-sdk
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: api-manager-javascript-client-sdk
+  registry: github
+  url: https://github.com/Sensedia/api-manager-javascript-client-sdk
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-09-08'
+  source_repo: https://github.com/Sensedia/api-manager-javascript-client-sdk
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-agillitas-android-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-agillitas-android-client
+  language: Java
+  official: true
+  version: null
+  published: '2017-08-26'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-agillitas-android-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-correios-android-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-correios-android-client
+  language: Java
+  official: true
+  version: null
+  published: '2017-08-26'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-correios-android-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-correios-java-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-correios-java-client
+  language: Java
+  official: true
+  version: null
+  published: '2017-08-26'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-correios-java-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-futcard-javascript-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-futcard-javascript-client
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-08-25'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-futcard-javascript-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-futcard-java-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-futcard-java-client
+  language: Java
+  official: true
+  version: null
+  published: '2017-08-25'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-futcard-java-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-correios-javascript-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-correios-javascript-client
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-08-25'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-correios-javascript-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-agillitas-java-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-agillitas-java-client
+  language: Java
+  official: true
+  version: null
+  published: '2017-08-25'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-agillitas-java-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: hackathon-agitech-agilitas-javascript-client
+  registry: github
+  url: https://github.com/Sensedia/hackathon-agitech-agilitas-javascript-client
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-08-25'
+  source_repo: https://github.com/Sensedia/hackathon-agitech-agilitas-javascript-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2017-microservice-phone
+  registry: github
+  url: https://github.com/Sensedia/apix2017-microservice-phone
+  language: JavaScript
+  official: true
+  version: null
+  published: '2017-08-01'
+  source_repo: https://github.com/Sensedia/apix2017-microservice-phone
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2017-microservice-payment
+  registry: github
+  url: https://github.com/Sensedia/apix2017-microservice-payment
+  language: Java
+  official: true
+  version: null
+  published: '2017-05-30'
+  source_repo: https://github.com/Sensedia/apix2017-microservice-payment
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2017-microservice-products
+  registry: github
+  url: https://github.com/Sensedia/apix2017-microservice-products
+  language: Java
+  official: true
+  version: null
+  published: '2017-05-29'
+  source_repo: https://github.com/Sensedia/apix2017-microservice-products
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: sdk_api_nucleus
+  registry: github
+  url: https://github.com/Sensedia/sdk_api_nucleus
+  language: Java
+  official: true
+  version: null
+  published: '2017-05-24'
+  source_repo: https://github.com/Sensedia/sdk_api_nucleus
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2016-frontend-ionic
+  registry: github
+  url: https://github.com/Sensedia/apix2016-frontend-ionic
+  language: JavaScript
+  official: true
+  version: null
+  published: '2016-06-09'
+  source_repo: https://github.com/Sensedia/apix2016-frontend-ionic
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2016-microservice-nodejs
+  registry: github
+  url: https://github.com/Sensedia/apix2016-microservice-nodejs
+  language: HTML
+  official: true
+  version: null
+  published: '2016-06-09'
+  source_repo: https://github.com/Sensedia/apix2016-microservice-nodejs
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix2016-microservice-java
+  registry: github
+  url: https://github.com/Sensedia/apix2016-microservice-java
+  language: HTML
+  official: true
+  version: null
+  published: '2016-06-09'
+  source_repo: https://github.com/Sensedia/apix2016-microservice-java
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix-carinsurance
+  registry: github
+  url: https://github.com/Sensedia/apix-carinsurance
+  language: Java
+  official: true
+  version: null
+  published: '2015-11-11'
+  source_repo: https://github.com/Sensedia/apix-carinsurance
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix-client
+  registry: github
+  url: https://github.com/Sensedia/apix-client
+  language: JavaScript
+  official: true
+  version: null
+  published: '2015-11-11'
+  source_repo: https://github.com/Sensedia/apix-client
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain
+- name: apix-files
+  registry: github
+  url: https://github.com/Sensedia/apix-files
+  language: ''
+  official: true
+  version: null
+  published: '2015-11-08'
+  source_repo: https://github.com/Sensedia/apix-files
+  evidence: repository in github.com/Sensedia, whose profile names the provider's domain

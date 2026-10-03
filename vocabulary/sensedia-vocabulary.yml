@@ -1,0 +1,124 @@
+generated: '2026-10-03'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_original/sensedia-current-openapi.yml
+vocabulary:
+  name: Sensedia Domain Vocabulary
+  description: 'Terms declared by Sensedia''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-03'
+  terms:
+  - term: Accounts
+    definition: Operações para listagem das informações da Conta do Cliente
+    tags:
+    - Resource Group
+    source: openapi/_original/sensedia-current-openapi.yml
+  - term: AccountBalancesData
+    definition: 'Conjunto de informações das Contas de: depósito à vista, poupança e de pagamento pré-paga'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/AccountBalancesData
+  - term: AccountData
+    definition: 'Object declared by the contract with fields: brandName, companyCnpj, type, compeCode, branchCode, number, checkDigit, accountId.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/AccountData
+  - term: AccountIdentificationData
+    definition: 'Conjunto dos atributos que caracterizam as Contas de: depósito à vista, poupança e de pagamento pré-paga'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/AccountIdentificationData
+  - term: AccountOverdraftLimitsData
+    definition: 'Conjunto de informações da Conta de: depósito à vista'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/AccountOverdraftLimitsData
+  - term: AccountTransactionsData
+    definition: 'Object declared by the contract with fields: transactionId, completedAuthorisedPaymentType, creditDebitType, transactionName,
+      type, amount, transactionCurrency, transactionDate, partieCnpjCpf, partiePersonType, partieCompeCode, partieBranchCode. (2 more)'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/AccountTransactionsData
+  - term: EnumAccountSubType
+    definition: 'Subtipo de conta (vide Enum): Conta individual - possui um único titular Conta conjunta simples - onde as movimentações financeiras
+      só podem serem realizadas mediante autorização de TODOS os correntistas da conta. Conta conjunta solidária - é a modalidade cujos titulares
+      podem realizar movimentações de forma isolada, isto é, sem que seja necessária a autorização dos demais titulares'
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumAccountSubType
+  - term: EnumAccountType
+    definition: 'Tipos de contas. Modalidades tradicionais previstas pela Resolução 4.753, não contemplando contas vinculadas, conta de domiciliados
+      no exterior, contas em moedas estrangeiras e conta correspondente moeda eletrônica. Vide Enum Conta de depósito à vista ou Conta corrente
+      - é o tipo mais comum. Nela, o dinheiro fica à sua disposição para ser sacado a qualquer momento. Essa conta não gera rendimentos '
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumAccountType
+  - term: EnumCompletedAuthorisedPaymentIndicator
+    definition: 'Indicador da transação: - Transação efetivada - Lançamento futuro'
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumCompletedAuthorisedPaymentIndicator
+  - term: EnumCreditDebitIndicator
+    definition: 'Indicador do tipo de lançamento: Débito (no extrato) Em um extrato bancário, os débitos, marcados com a letra “D” ao lado do
+      valor registrado, informam as saídas de dinheiro na conta-corrente. Crédito (no extrato) Em um extrato bancário, os créditos, marcados com
+      a letra “C” ao lado do valor registrado, informam as entradas de dinheiro na conta-corrente.'
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumCreditDebitIndicator
+  - term: EnumPartiePersonType
+    definition: Identificação do Tipo de Pessoa da pessoa envolvida na transação. Pessoa Natural - Informar CPF no campo “payerCnpjCpf” Pessoa
+      Jurídica - Informar CNPJ no campo “payerCnpjCpf”
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumPartiePersonType
+  - term: EnumTransactionTypes
+    definition: Tipo de Transação
+    tags:
+    - Enumeration
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/EnumTransactionTypes
+  - term: Links
+    definition: Referências para outros recusos da API requisitada.
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/Links
+  - term: Meta
+    definition: Meta informações referente à API requisitada.
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/Meta
+  - term: ResponseAccountList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseAccountList
+  - term: ResponseAccountBalances
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseAccountBalances
+  - term: ResponseAccountIdentification
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseAccountIdentification
+  - term: ResponseAccountOverdraftLimits
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseAccountOverdraftLimits
+  - term: ResponseAccountTransactions
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseAccountTransactions
+  - term: ResponseError
+    definition: 'Object declared by the contract with fields: errors, meta.'
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/ResponseError
+  - term: XFapiInteractionId
+    definition: Um UID [RFC4122](https://tools.ietf.org/html/rfc4122) usado como um ID de correlação. Se fornecido, o transmissor deve "reproduzir"
+      esse valor no cabeçalho de resposta.
+    tags:
+    - Object
+    source: openapi/_original/sensedia-current-openapi.yml#/components/schemas/XFapiInteractionId
