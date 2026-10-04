@@ -1,0 +1,28 @@
+{
+  "provider": "sensedia",
+  "sources": [
+    "_original/sensedia-current-openapi.yml",
+    "_ae-authored/sensedia-openapi-generated.yml"
+  ],
+  "outputs": [
+    "sensedia-accounts-api-openapi.yml",
+    "sensedia-health-api-openapi.yml",
+    "sensedia-sensedia-api-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "2 archived document(s) dropped as subsets of other archived documents",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "sensedia-current-openapi.yml: upgraded openapi 3.0.0 -> OpenAPI 3.2.0",
+    "sensedia-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "sensedia-openapi-generated.yml: tagged paths POST /v1/{v1id} -> Sensedia API",
+    "sensedia-openapi-generated.yml: declared missing tag: Sensedia API",
+    "apis.yml register: written (+3 apis, 4 total)"
+  ],
+  "skipped": [
+    "_original/sensedia-teste-openapi.yml: archived document superseded by a larger archived document",
+    "_original/sensedia-old-openapi.yml: archived document superseded by a larger archived document"
+  ]
+}

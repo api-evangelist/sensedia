@@ -1,0 +1,64 @@
+openapi: 3.2.0
+info:
+  title: Sensedia API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 2 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Sensedia has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 2
+    pages-with-code: 0
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.sensedia.com/docs/developer-portal/overview/apps/webhook
+tags:
+- name: Sensedia API
+paths:
+  /v1/{v1id}:
+    post:
+      operationId: post_v1_v1id
+      tags:
+      - Sensedia API
+      summary: Endpoint responsible for creating and returning the app credentials
+      x-source: https://docs.sensedia.com/docs/developer-portal/overview/apps/webhook
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV1V1IdResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 3 example path(s) differing only at v1Id
+components:
+  schemas:
+    PostV1V1IdResponse:
+      type: object
+      properties:
+        apiKeyId:
+          type: string
+          description: Returned when credentialType=API_KEY
+        apiKey:
+          type: string
+          description: Returned when credentialType=API_KEY
+        clientId:
+          type: string
+          description: Returned when credentialType=CLIENT_CREDENTIALS
+        clientSecret:
+          type: string
+          description: Returned when credentialType=CLIENT_CREDENTIALS
+        customCredentials:
+          type: object
+          description: Optional additional information

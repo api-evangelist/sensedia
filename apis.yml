@@ -91,90 +91,42 @@ apis:
       status: 0
     checked: '2026-10-03'
   aid: sensedia:sensedia-api-platform
-- aid: sensedia:sensedia-api
-  name: Sensedia API
-  description: 'Sensedia API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-03); not
-
-    the provider''s own document.'
-  humanURL: https://docs.sensedia.com/docs/developer-portal/overview/apps/webhook
+- aid: sensedia:sensedia-accounts-api
+  name: Sensedia Accounts API
+  description: Operações para listagem das informações da Conta do Cliente
+  humanURL: https://developers.sensedia.com/pt/products
+  baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  tags:
+  - Accounts
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/sensedia-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/sensedia-accounts-api-openapi.yml
   - type: JSONSchema
     url: json-schema/sensedia-post-v1-v1-id-response-schema.json
-- aid: sensedia:sensedia-old-api
-  name: Sensedia Old API
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
+- aid: sensedia:sensedia-health-api
+  name: Sensedia Health API
+  description: The Health API from Sensedia — 1 operation(s) for health.
+  humanURL: https://developers.sensedia.com/pt/products
   baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  tags:
+  - Health
   properties:
   - type: OpenAPI
-    url: openapi/_original/sensedia-old-openapi.yml
-- aid: sensedia:sensedia-current-api
-  name: Sensedia Current API
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
+    url: openapi/sensedia-health-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/sensedia-post-v1-v1-id-response-schema.json
+- aid: sensedia:sensedia-sensedia-api-api
+  name: Sensedia Sensedia API
+  description: The Sensedia API API from Sensedia — 1 operation(s) for sensedia api.
+  humanURL: https://developers.sensedia.com/pt/products
   baseURL: https://api.banco.com.br/open-banking/accounts/v1
+  tags:
+  - Sensedia API
   properties:
   - type: OpenAPI
-    url: openapi/_original/sensedia-current-openapi.yml
-- aid: sensedia:sensedia-teste-api
-  name: Sensedia Teste API
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
-  baseURL: https://api.banco.com.br/open-banking/accounts/v1
-  properties:
-  - type: OpenAPI
-    url: openapi/_original/sensedia-teste-openapi.yml
-
-- aid: sensedia:sensedia-old-api
-
-  name: Sensedia Old API
-
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
-
-  baseURL: https://api.banco.com.br/open-banking/accounts/v1
-
-  properties:
-
-  - type: OpenAPI
-
-    url: openapi/_original/sensedia-old-openapi.yml
-
-- aid: sensedia:sensedia-current-api
-
-  name: Sensedia Current API
-
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
-
-  baseURL: https://api.banco.com.br/open-banking/accounts/v1
-
-  properties:
-
-  - type: OpenAPI
-
-    url: openapi/_original/sensedia-current-openapi.yml
-
-- aid: sensedia:sensedia-teste-api
-
-  name: Sensedia Teste API
-
-  description: API de contas de depósito à vista, contas de poupança e contas pré-pagas do Open Banking Brasil – Fase 2.
-
-  humanURL: https://github.com/Sensedia/gerador-changelog-api
-
-  baseURL: https://api.banco.com.br/open-banking/accounts/v1
-
-  properties:
-
-  - type: OpenAPI
-
-    url: openapi/_original/sensedia-teste-openapi.yml
+    url: openapi/sensedia-sensedia-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/sensedia-post-v1-v1-id-response-schema.json
 x-coverage:
   state: none
   reason: no-developer-program
