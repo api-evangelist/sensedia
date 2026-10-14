@@ -15,6 +15,50 @@
   relationship: distribution-channel
   status: not-a-workflow
   arazzo: null
+- slug: sensedia-open-finance-brasil
+  label: Open Finance Brasil
+  partner_name: Open Finance Brasil
+  type: contract
+  channel: regulator-register
+  evidence: https://data.directory.openbankingbrasil.org.br/participants
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: Open Finance Brasil directory (Banco Central do Brasil)
+    spec_file: null
+    role: participant
+    registered_name: SISPRIME DO BRASIL - COOPERATIVA DE CREDITO
+    register_id: b185ecfd-53b1-51ac-86bf-51d6cd66d828
+    matched_domain: sensedia.com
+    api_families:
+    - channels_banking-agents
+    - channels_branches
+    - channels_electronic-channels
+    - channels_phone-channels
+    - channels_shared-automated-teller-machines
+    - opendata-accounts_business-accounts
+    - opendata-accounts_personal-accounts
+    - opendata-creditcards_business-credit-cards
+    - opendata-creditcards_personal-credit-cards
+    - opendata-financings_business-financings
+    - opendata-financings_personal-financings
+    - opendata-investments_bank-fixed-incomes
+    - opendata-invoicefinancings_business-invoice-financings
+    - opendata-invoicefinancings_personal-invoice-financings
+    - opendata-loans_business-loans
+    - opendata-loans_personal-loans
+    - opendata-unarranged_business-unarranged-account-overdraft
+    - opendata-unarranged_personal-unarranged-account-overdraft
+    - payments-consents
+    - payments-pix
+    - payments-pix-recurring-payments
+    - payments-pix-recurring-payments-automatic
+    - payments-recurring-consents
+    - payments-recurring-consents-automatic
+    detected_by: sweep-standard-registers.py
+    detected: '2026-10-14'
+  status: not-a-workflow
+  arazzo: null
 - slug: sensedia-fdx-financial-data-exchange
   label: FDX (Financial Data Exchange)
   partner: fdx
