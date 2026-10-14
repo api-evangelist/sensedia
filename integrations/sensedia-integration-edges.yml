@@ -2,6 +2,7 @@ generated: '2026-10-13'
 method: searched
 checked:
 - https://aws.amazon.com/marketplace/
+- https://registry.financialdataexchange.org/
 marketplace_apps: []
 edges:
 - partner_name: AWS Marketplace
@@ -21,3 +22,27 @@ edges:
   seller_name: Sensedia
   detected_by: sweep-cloud-marketplaces.py
   detected: '2026-10-13'
+- partner_name: FDX (Financial Data Exchange)
+  partner: fdx
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registry.financialdataexchange.org/
+  contract_reference:
+    register: FDX Registry
+    standard: FDX API
+    spec_file: null
+    register_api: https://registry.financialdataexchange.org/fdxregistryapi/organizations/search/listingTags
+    role: data-recipient
+    member_type: MEMBER
+    registered_name: Sensedia S/A
+    register_id: 303
+    registered_website: https://www.sensedia.com/
+    country: Brazil
+    fdx_version: null
+    matched_by: domain:sensedia.com
+    detected_by: sweep-fdx.py
+    detected: '2026-10-14'
+  detected_by: sweep-fdx.py
+  first_seen: '2026-10-14'
