@@ -27,6 +27,12 @@ tags:
 - API Management
 - Integration
 - Enterprise
+- Artificial Intelligence
+tags_raw:
+- Company
+- API Management
+- Integration
+- Enterprise
 - AI
 
 maintainers:
@@ -97,6 +103,8 @@ apis:
   humanURL: https://developers.sensedia.com/pt/products
   baseURL: https://api.banco.com.br/open-banking/accounts/v1
   tags:
+  - Account
+  tags_raw:
   - Accounts
   properties:
   - type: OpenAPI
